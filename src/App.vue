@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <MglMap class="mglmap" container="map" :zoom="10.5" :access-token="accessToken" :map-style="mapStyle" :center="sgCenter">
+    <MglMap :zoom="10.5" :access-token="accessToken" :map-style="mapStyle" :center="sgCenter">
     </MglMap>
   </div>
 </template>
 
 <script>
-import 'mapbox-gl/dist/mapbox-gl.css'
-// import Mapbox from "mapbox-gl"
+import "mapbox-gl/dist/mapbox-gl.css";
+import "v-mapbox/dist/v-mapbox.css";
 import { MglMap } from "v-mapbox"
 
 export default {
@@ -32,6 +32,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  height: 100vh;
 }
 </style>
