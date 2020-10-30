@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import "mapbox-gl/dist/mapbox-gl.css";
-import "v-mapbox/dist/v-mapbox.css";
 import { MglMap } from "v-mapbox"
 
 export default {
@@ -26,6 +24,13 @@ export default {
 </script>
 
 <style>
+@import "~mapbox-gl/dist/mapbox-gl.css";
+@import "~v-mapbox/dist/v-mapbox.css";
+
+html, body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
